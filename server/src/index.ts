@@ -1,3 +1,5 @@
+import "reflect-metadata";
+
 import Koa from 'koa';
 import routes from './routes/index';
 
