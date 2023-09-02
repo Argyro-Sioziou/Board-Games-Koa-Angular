@@ -4,6 +4,6 @@ import api from './api/index';
 const router: Router = new Router();
 
 // restful api
-router.use('/api/v1/user', api.routes());
+router.use('/api', api.routes());
 
 export default router;

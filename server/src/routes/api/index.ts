@@ -1,8 +1,8 @@
 import Router from 'koa-router';
-import userApi from './user';
+import boardGameApi from './boardGame';
 
 const router: any = new Router();
 
-userApi(router);
+boardGameApi(router);
 
 export default router;
