@@ -10,7 +10,7 @@ export default class BoardGameController {
     const boardGames = await boardGameService.getBoardGames();
 
     ctx.body = {
-      data: { boardGames }
+      boardGames,
     };
   }
 
@@ -18,7 +18,7 @@ export default class BoardGameController {
     const boardGame = await boardGameService.getBoardGameById(ctx.params.id);
 
     ctx.body = {
-      data: { boardGame }
+      boardGame,
     };
   }
 
@@ -32,7 +32,7 @@ export default class BoardGameController {
     const boardGame = await boardGameService.createBoardGame(name, description);
 
     ctx.body = {
-      data: { boardGame }
+      boardGame,
     };
   }
 };

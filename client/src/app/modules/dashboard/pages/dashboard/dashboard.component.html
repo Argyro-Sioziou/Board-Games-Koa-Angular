@@ -1,0 +1,7 @@
+<div id="dashboard">
+  <div class="cards">
+    <div *ngFor="let boardGame of boardGames" class="card bg-dark text-white">
+      <app-dashboard-item [boardGame]="boardGame"></app-dashboard-item>
+    </div>
+  </div>
+</div>

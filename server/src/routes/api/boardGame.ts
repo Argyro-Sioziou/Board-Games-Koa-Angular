@@ -10,17 +10,17 @@ function boardGameApi(router: Router) {
   /**
    * @route GET /api/boardGames/:id
    */
-  router.get('/boardGames/:id', boardGameController.getBoardGameById);
+  router.get('/board-games/:id', boardGameController.getBoardGameById);
 
   /**
    * @route GET /api/boardGames
    */
-  router.get('/boardGames', boardGameController.getBoardGames);
+  router.get('/board-games', boardGameController.getBoardGames);
 
   /**
    * @route POST /api/boardGames
    */
-  router.post('/boardGames', boardGameController.createBoardGame);
+  router.post('/board-games', boardGameController.createBoardGame);
 }
 
 export default boardGameApi;
